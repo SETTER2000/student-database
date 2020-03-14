@@ -36,7 +36,7 @@ Note:  Generators are usually run using the globally-installed `sails` CLI (comm
 6. > sails lift
 
 
-## Advanset
+## Additionally
 
 Used library
 

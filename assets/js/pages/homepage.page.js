@@ -29,6 +29,8 @@ parasails.registerPage('homepage', {
       }, 500);
     },
 
+
+
     // Private methods not tied to a particular DOM event are prefixed with _
     _setHeroHeight: function() {
       var $hero = this.$find('[full-page-hero]');

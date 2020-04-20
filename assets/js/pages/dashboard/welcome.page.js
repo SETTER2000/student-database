@@ -79,11 +79,13 @@ parasails.registerPage('welcome', {
     _.extend(this, SAILS_LOCALS);
     io.socket.get(`/api/v1/students/list`, function gotResponse(body, response) {
       // console.log('Сервер ответил кодом ' + response.statusCode + ' и данными: ', body);
+
+
     });
     // Принимаем данные по событию list-*
     io.socket.on('list-student', (data) => {
       this.students = this.editList = this.filterList = _.isNull(data) ? [] : data;
-      console.log('STUDENTS::: ', this.students);
+      // console.log('STUDENTS::: ', this.students);
     });
   },
   mounted: async function () {

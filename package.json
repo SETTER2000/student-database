@@ -1,5 +1,5 @@
 {
-  "name": "student-database",
+  "name": "std",
   "private": true,
   "version": "0.0.6",
   "description": "a Sails application",
@@ -33,7 +33,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/student-database.git"
+    "url": "git://github.com/anonymous node/sails user/std.git"
   },
   "author": "anonymous node/sails user",
   "license": "",

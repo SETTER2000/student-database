@@ -184,7 +184,7 @@ module.exports = {
     * > (For a full list, see https://sailsjs.com/plugins/sessions)            *
     *                                                                          *
     ***************************************************************************/
-    // adapter: '@sailshq/connect-redis',
+    adapter: '@sailshq/connect-redis',
     // url: 'redis://user:password@localhost:6379/databasenumber',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
@@ -221,7 +221,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cookie: {
-      // secure: true,
+      secure: true,
       maxAge: 24 * 60 * 60 * 1000,  // 24 hours
     },
 
@@ -255,6 +255,9 @@ module.exports = {
     //   'https://staging.example.com',
     // ],
 
+      onlyAllowOrigins: ["http://localhost", "http://www.student", "http://student"],
+
+
 
     /***************************************************************************
     *                                                                          *
@@ -268,7 +271,7 @@ module.exports = {
     * (https://sailsjs.com/docs/concepts/deployment/scaling)                   *
     *                                                                          *
     ***************************************************************************/
-    // adapter: '@sailshq/socket.io-redis',
+    adapter: '@sailshq/socket.io-redis',
     // url: 'redis://user:password@bigsquid.redistogo.com:9562/databasenumber',
     //--------------------------------------------------------------------------
     // /\   OR, to avoid checking it in to version control, you might opt to
@@ -322,7 +325,7 @@ module.exports = {
     * (https://sailsjs.com/config/http)                                        *
     *                                                                          *
     ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true,
 
   },
 
@@ -371,7 +374,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
+    // baseUrl: 'https://example.com',
+     baseUrl: 'http://localhost',
     internalEmailAddress: 'support@example.com',
 
     // mailgunDomain: 'mg.example.com',
